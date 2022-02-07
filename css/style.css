@@ -13,7 +13,7 @@
 /* цвет границы хэдера: #ECECEC */
 /* цвет иконок социальных сетей в нашей команде: #AFB1B8 */
 /* цвет фона иконок футера: rgba(255, 255, 255, 0.1) */
-/* цвет фона label: rgba(47, 48, 58, 0.8) */
+/* цвет фона overlay секции about: rgba(47, 48, 58, 0.8) */
 /* цвет фона overlay модального окна: rgba(0, 0, 0, 0.2) */
 /* цвет фона overlay карточки проекта: rgba(33, 150, 243, 0.9) */
 
@@ -37,7 +37,7 @@
     --border-header-color: #ECECEC;
     --icon-color: #AFB1B8;
     --icon-background-footer: rgba(255, 255, 255, 0.1);
-    --background-color-label: rgba(47, 48, 58, 0.8);
+    --background-overlay-about: rgba(47, 48, 58, 0.8);
     --background-overlay-modal: rgba(0, 0, 0, 0.2);
     --overlay-project-card: rgba(33, 150, 243, 0.9);
 
@@ -386,19 +386,19 @@ a {
 
 /* Чем мы занимаемся */
 
-.work-list {
+.about-list {
     display: flex;
     margin-left:calc(-1 * var(--card-gap));
 }
 
-.work-item {
+.about-item {
     position: relative;
     flex-basis: calc(100% / 3 - var(--card-gap));
     margin-left: var(--card-gap);
     z-index: -1;
 }
 
-.work-item > .text {
+.about-item > .text {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -412,7 +412,7 @@ a {
     line-height: 1.14;
     text-align: center;
     text-transform: uppercase;
-    background-color: var(--background-color-label);
+    background-color: var(--background-overlay-about);
     color: var(--white-color);
 }
 
@@ -567,6 +567,10 @@ a {
     color: var(--white-color);
 }
 
+.address-list {
+    width: 231px;
+}
+
 .address-list .item:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -664,7 +668,7 @@ a {
     font-size: 16px;
     line-height: 1.25;
     color: var(--text-adress-color);
-    background-color: transparent;
+    background-color: var(--background-footer-color);
 }
 
 .email-form .form-button {
