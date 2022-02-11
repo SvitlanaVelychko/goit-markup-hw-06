@@ -363,6 +363,11 @@ a {
 .form-label:nth-child(-n+4) {
     margin-bottom: 10px;
 }
+
+.form-label.comment {
+    margin-bottom: 20px;
+}
+
 .form-content {
     position: relative;
     display: block;
@@ -428,6 +433,7 @@ a {
     border: 1px solid var(--accent-color);
 }
 
+
 .checkbox-label {
     position: relative;
     display: inline-flex;
@@ -435,8 +441,6 @@ a {
     align-items: center;
 
     width: 423px;
-    margin-top: 20px;
-    margin-bottom: 30px;
 
     font-size: 14px;
     line-height: 1.71;
@@ -473,9 +477,11 @@ a {
     background-color: var(--accent-color);
     fill: var(--white-color);
 }
+
 .modal-form .button {
     padding-left: 56px;
     padding-right: 55px;
+    margin-top: 30px;
 }
 
 /* Section */
