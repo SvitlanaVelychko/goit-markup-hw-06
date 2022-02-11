@@ -433,13 +433,11 @@ a {
     border: 1px solid var(--accent-color);
 }
 
-
 .checkbox-label {
     position: relative;
     display: inline-flex;
     justify-content: right;
     align-items: center;
-
     width: 423px;
 
     font-size: 14px;
